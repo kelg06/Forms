@@ -4,7 +4,7 @@ class FrontTimes(forms.Form):
     string = forms.CharField()
     number = forms.IntegerField()
 
-class fixTeen(forms.Form):
+class FixTeen(forms.Form):
     a= forms.IntegerField()
     b =forms.IntegerField()
     c=forms.IntegerField()

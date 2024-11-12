@@ -21,13 +21,17 @@ def front_times(request):
   return render(request, "front.html", {"form": form})
 
 def fix_teen(request):
-  form = fixTeen(request.GET)
+  form = FixTeen(request.GET)
   if form.is_valid():
     a= form.cleaned_data['a']
     b= form.cleaned_data['b']
     c= form.cleaned_data['c']
 
-    total = fixed_teen(a,b,c)
+    num_a = fix(a)
+    num_b = fix(b)
+    num_c = fix(c)
+
+    total = num_a + num_b + num_c
     return render(request, "teen.html", {"form": form, "total":total})
   return render(request, "teen.html", {"form": form})
 

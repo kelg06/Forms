@@ -1,34 +1,16 @@
-def fixed_teen(a,b,c):
-  if a < 9:
-    pass
-  elif a >= 10 and a < 15:
-    a = 0
-  elif a == 15 or a==16:
-    pass
-  elif a >= 17 and a <= 19:
-    a = 0
-  
-  if b < 9:
-    pass
-  elif b >= 10 and b < 15:
-    b = 0
-  elif b == 15 or b==16:
-    pass
-  elif b >= 17 and b <= 19:
-    b = 0
-    
-  if c < 9:
-    pass
-  elif c >= 10 and c < 15:
-    c = 0
-  elif c == 15 or c==16:
-    pass
-  elif c >= 17 and c <= 19:
-    c = 0
-  total=a+b+c
-  return total
-  
-
+def fix(n):
+  if n < 9:
+    return n
+  elif n >= 10 and n < 15:
+    n = 0
+    return n
+  elif n == 15 or n == 16:
+    return n
+  elif n>= 17 and n <= 19:
+    n = 0
+    return n
+  else:
+    return n
 
 
 
